@@ -1,0 +1,1 @@
+# nstech-mdm-technical-test
