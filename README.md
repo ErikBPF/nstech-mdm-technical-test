@@ -52,7 +52,7 @@ Develop a C# microservice that integrates with Kafka, PostgreSQL, and Kubernetes
     - `ValidatedAt` (timestamp)
     - `Status` (values: "Valid" or "Error")
     - Additional fields (e.g., error messages or processing details)
-  - Use an ORM (e.g., Entity Framework Core) or raw ADO.NET for data access.
+  - Use an ORM (e.g., Entity Framework Core) for data access.
 
 ### 4. Containerization & Deployment
 
