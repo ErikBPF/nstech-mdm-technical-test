@@ -10,8 +10,8 @@ Develop a C# microservice that integrates with Kafka, PostgreSQL, and Kubernetes
 - **Republish results**:
   - If the CNPJ is valid, re-publish the record to a "success" Kafka topic.
   - If invalid, publish an error message to a separate "error" Kafka topic.
-- **Deploy** the solution on a local Kubernetes cluster (e.g., Minikube, k3s, or any local alternative) using a custom Helm chart.
 - **Documentation & Automation**: Include a brief `README.md` and a `Makefile` to streamline common tasks (build, test, deploy).
+- **(Desireble) Deploy** the solution on a local Kubernetes cluster (e.g., Minikube, k3s, or any local alternative) using a custom Helm chart.
 
 ---
 
@@ -54,7 +54,17 @@ Develop a C# microservice that integrates with Kafka, PostgreSQL, and Kubernetes
     - Additional fields (e.g., error messages or processing details)
   - Use an ORM (e.g., Entity Framework Core) for data access.
 
-### 4. Containerization & Deployment
+
+### 4. Repository Documentation & Automation
+
+- **README.md**:
+  - Provide brief documentation explaining:
+    - The purpose of the module.
+    - An architecture overview.
+    - Setup instructions including prerequisites.
+    - Steps to build, test, and deploy the application.
+
+### 5. (Desirable) Containerization & Deployment
 
 - **Dockerization**:
   - Create a `Dockerfile` to containerize the C# microservice.
@@ -66,15 +76,6 @@ Develop a C# microservice that integrates with Kafka, PostgreSQL, and Kubernetes
     - A Kubernetes Service to expose the application.
     - ConfigMaps/Secrets to manage environment variables (e.g., Kafka broker addresses, PostgreSQL connection details).
   - Ensure the solution is deployable on a local Kubernetes cluster (e.g., Minikube, k3s).
-
-### 5. Repository Documentation & Automation
-
-- **README.md**:
-  - Provide brief documentation explaining:
-    - The purpose of the module.
-    - An architecture overview.
-    - Setup instructions including prerequisites.
-    - Steps to build, test, and deploy the application.
 
 ### 6. Submission Guidelines
 
